@@ -1,8 +1,14 @@
 ﻿open System
 
-for arg in Environment.GetCommandLineArgs() do
-    match arg with
-    | "var" -> Variables.run ()
-    | "logic" -> Logic.run ()
-    | "functions" -> Functions.run ()
-    | _ -> ()
+[<EntryPoint>]
+let main args =
+    for arg in Environment.GetCommandLineArgs() do
+        match arg.ToLower() with
+        | "var" -> Variables.run ()
+        | "logic" -> Logic.run ()
+        | "functions" -> Functions.run ()
+        | "collections" -> Collections.run ()
+        | _ -> ()
+
+    // return code 0
+    0
