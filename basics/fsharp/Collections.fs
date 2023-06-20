@@ -2,6 +2,13 @@ module Collections
 
 let array1: array<int> = [| 1; 2; 3; 4 |]
 let list1: list<int> = [ 4; 5; 5; 6 ]
+let pets = [ "dog"; "cat"; "pig"; "chicken"; "parrot" ]
+
+
+let add x y = x + y
+let addOne = add 1
+let isOdd i = i % 2 = 1
+let printInt = printfn "%i"
 
 let run args =
 
@@ -32,25 +39,32 @@ let run args =
     printfn "mapping an array"
     array1
     |> Array.map (fun i -> i + 1)
+    |> Array.filter (fun i -> i % 2 = 1)
     |> Array.iter (fun c -> printfn "%i" c)
 
     Utils.separator ()
 
     printfn "more functional mapping"
-    let addOne i = 1 + i
-    let printInt = printfn "%i"
     array1
     |> Array.map addOne
+    |> Array.filter isOdd
     |> Array.iter printInt
 
     Utils.separator ()
 
     printfn "total of all unique elements"
-    let add x y = x + y
-    let printInt = printfn "%i"
     (Array.toList array1) @ list1
     |> List.distinct
     |> List.fold add 0
     |> printInt
 
     Utils.separator ()
+
+    match args with
+    | [||] -> printfn "pass a pet to try the last section"
+    | rArgs ->
+        pets
+        |> List.tryFind args[0].Equals
+        |> Option.map (fun pet -> sprintf "%s is a pet!" pet)
+        |> Option.defaultWith (fun () -> sprintf "%s is not a pet" args[0])
+        |> printfn "%s"
