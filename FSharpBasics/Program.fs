@@ -1,6 +1,5 @@
 ﻿[<EntryPoint>]
 let main args =
-
     for arg in args do
         match arg.ToLower() with
         | "variables" -> Variables.run args[1..]
