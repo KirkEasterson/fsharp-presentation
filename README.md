@@ -1,19 +1,25 @@
 ### Create an F# project
 
-- To create a basic `fsharp` console project, run the following command
+- To create a basic `fsharp` console project, run the following command:
+
+    - https://learn.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line
 
 ```bash
 dotnet new console --language "F#" --name MyFsharpBasics --output myfsharp
 ```
 
-- To create a basic `Fable` project, run the following commands
+- To create a basic `Fable` project, run the following commands:
+
+    - https://fable.io/docs/2-steps/your-first-fable-project.html
 
 ```bash
 dotnet new --install Fable.Template # install the fable template
 dotnet new fable --name MyFable # create the fable project
 ```
 
-- To create a `Fable React` project, run the following commands
+- To create a `Fable React` project, run the following commands:
+
+    - https://zaid-ajaj.github.io/Feliz/
 
 ```bash
 dotnet new --install Feliz.Template # install the fable template
