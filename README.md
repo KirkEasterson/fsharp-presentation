@@ -13,6 +13,13 @@ dotnet new --install Fable.Template # install the fable template
 dotnet new fable --name MyFable # create the fable project
 ```
 
+- To create a `Fable React` project, run the following commands
+
+```bash
+dotnet new --install Feliz.Template # install the fable template
+dotnet new feliz --name MyFeliz # create the fable project
+```
+
 ## Running the code
 
 - Run `dotnet run` in the directory of each dotnet project. You can also build and run the project:
@@ -22,9 +29,9 @@ dotnet build
 ./bin/Debug/net7.0/FSharpBasics
 ```
 
-- To run the `Fable` project, run the followings commands in the `Fable/` directory:
+- To run the `Fable` projects, run the followings commands in the `Fable/` directory:
 
-    - *NOTE*: You will need the .NET 6 SDK installed to run this project
+    - *NOTE*: You will need the .NET 6 SDK installed to run these projects
 
 
 ```bash
