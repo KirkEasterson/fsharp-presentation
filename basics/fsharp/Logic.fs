@@ -15,10 +15,10 @@ let run args =
     if bar = baz then
         printfn "bar equals baz"
 
-    // quiz: what will be printed?
+    // matching on a tuple
     match (foo, bar, baz) with
     | (true, _, false) -> "foo is true, but baz is false"
     | (true, false, _) -> "foo is true, but bar is false"
     | (false, false, false) -> "everything is false"
     | (_, _, _) -> "they all have some values"
-    |> printfn "%s"
+    |> printfn "%s" // quiz: what will be printed?
