@@ -9,7 +9,7 @@ let addTwoVerbose x : int = add 2 x
 // curried function
 let addTwo = add 2
 
-let run () =
+let run args =
 
     addTwoVerbose 8
     |> printfn "%i"

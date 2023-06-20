@@ -1,6 +1,6 @@
 module Logic
 
-let run () =
+let run args =
 
     let foo: bool = true
     let bar = false // types can be inferred

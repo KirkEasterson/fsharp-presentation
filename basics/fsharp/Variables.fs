@@ -1,6 +1,6 @@
 module Variables
 
-let run () =
+let run args =
 
     printfn "Hello, World!"
 
