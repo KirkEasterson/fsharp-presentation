@@ -42,9 +42,6 @@ let addOneNum (x: Number) : Number =
     | Int32 i -> Int32 (i + 1)
 
 
-[<Struct>]
-type StructPoint3D = { X: float; Y: float; Z: float }
-
 let run args =
 
     // using a default member
