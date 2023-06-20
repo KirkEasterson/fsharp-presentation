@@ -12,6 +12,7 @@
     <Compile Include="Functions.fs" />
     <Compile Include="Collections.fs" />
     <Compile Include="Records.fs" />
+    <Compile Include="Structs.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
