@@ -1,7 +1,5 @@
 module Structs
 
-open System
-
 [<Struct>]
 type Point2D(x: float, y: float) =
     member this.X = x
