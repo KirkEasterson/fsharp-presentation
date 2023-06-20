@@ -2,6 +2,7 @@ namespace App
 
 open Feliz
 open Feliz.Router
+open Fable.Core
 
 type Components =
     /// <summary>
@@ -37,9 +38,9 @@ type Components =
             router.onUrlChanged updateUrl
             router.children [
                 match currentUrl with
-                | [ ] -> Html.h1 "Index"
-                | [ "hello" ] -> Components.HelloWorld()
-                | [ "counter" ] -> Components.Counter()
+                | [] -> Components.Counter()
+                // | [ "hello" ] -> Components.HelloWorld()
+                // | [ ] -> Html.h1 "Index"
                 | otherwise -> Html.h1 "Not found"
             ]
         ]
