@@ -41,6 +41,6 @@ dotnet build
 
 
 ```bash
-npm install # install node dependencies
+npm install
 npm start
 ```
