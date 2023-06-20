@@ -1,12 +1,11 @@
-﻿open System
-
-[<EntryPoint>]
+﻿[<EntryPoint>]
 let main args =
-    for arg in Environment.GetCommandLineArgs() do
+
+    for arg in args do
         match arg.ToLower() with
-        | "variables" -> Variables.run ()
-        | "logic" -> Logic.run ()
-        | "functions" -> Functions.run ()
-        | "collections" -> Collections.run ()
+        | "variables" -> Variables.run args
+        | "logic" -> Logic.run args
+        | "functions" -> Functions.run args
+        | "collections" -> Collections.run args
         | _ -> ()
     0
