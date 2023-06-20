@@ -9,10 +9,13 @@ let addTwoVerbose x : int = add 2 x
 // curried function
 let addTwo = add 2
 
+let printIntVerbose i : unit = printfn "%i" i
+let printInt = printfn "%i"
+
 let run args =
 
     addTwoVerbose 8
-    |> printfn "%i"
+    |> printInt
 
     addTwo 8
-    |> printfn "%i"
+    |> printInt
