@@ -9,6 +9,4 @@ let main args =
         | "functions" -> Functions.run ()
         | "collections" -> Collections.run ()
         | _ -> ()
-
-    // return code 0
     0
