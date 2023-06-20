@@ -9,5 +9,6 @@ let main args =
         | "collections" -> Collections.run args[1..]
         | "records" -> Records.run args[1..]
         | "structs" -> Structs.run args[1..]
+        | "exceptions" -> Exceptions.run args[1..]
         | _ -> ()
     0
