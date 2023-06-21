@@ -1,6 +1,10 @@
 name: Fable
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'Fable/**'
+      - '.github/workflows/fable.yml'
 
 jobs:
   build:
