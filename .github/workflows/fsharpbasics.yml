@@ -1,10 +1,6 @@
 name: FSharpBasics
 
-on:
-  push:
-    paths:
-      - 'FSharpBasic/**'
-      - 'fsharpbasics.yml'
+on: [push]
 
 jobs:
   build:
