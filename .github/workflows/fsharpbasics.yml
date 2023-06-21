@@ -3,8 +3,8 @@ name: FSharpBasics
 on:
   push:
     paths:
-      - FSharpBasic/**
-      - fsharpbasics.yml
+      - 'FSharpBasic/**'
+      - 'fsharpbasics.yml'
 
 jobs:
   build:
