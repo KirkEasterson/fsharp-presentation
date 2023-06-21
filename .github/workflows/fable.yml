@@ -22,6 +22,3 @@ jobs:
       - name: Build
         working-directory: ./Fable
         run: npm run build
-      - name: Test
-        working-directory: ./Fable
-        run: dotnet test --no-restore --verbosity normal

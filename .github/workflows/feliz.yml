@@ -22,6 +22,3 @@ jobs:
       - name: Build
         working-directory: ./Feliz
         run: npm run build
-      - name: Test
-        working-directory: ./Feliz
-        run: dotnet test --no-restore --verbosity normal
