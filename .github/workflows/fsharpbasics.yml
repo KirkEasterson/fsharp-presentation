@@ -1,6 +1,9 @@
 name: FSharpBasics
 
-on: [push]
+on:
+  push:
+    paths:
+      - FSharpBasic/**
 
 jobs:
   build:
