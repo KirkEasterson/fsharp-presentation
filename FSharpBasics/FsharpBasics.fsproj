@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Utils.fs" />
     <Compile Include="Variables.fs" />
     <Compile Include="Logic.fs" />
     <Compile Include="Functions.fs" />
