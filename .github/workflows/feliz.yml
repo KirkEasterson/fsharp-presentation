@@ -1,10 +1,6 @@
 name: Feliz
 
-on:
-  push:
-    paths:
-      - 'Feliz/**'
-      - '.github/workflows/feliz.yml'
+on: [push]
 
 jobs:
   build:
