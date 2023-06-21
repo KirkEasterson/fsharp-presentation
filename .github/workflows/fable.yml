@@ -18,12 +18,10 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
         working-directory: ./Fable
-        run: dotnet restore
+        run: npm install
       - name: Build
         working-directory: ./Fable
-        run: |
-          npm install
-          npm run build
+        run: npm run build
       - name: Test
         working-directory: ./Fable
         run: dotnet test --no-restore --verbosity normal
