@@ -11,4 +11,5 @@ let main args =
         | "exceptions" -> Exceptions.run args[1..]
         | "async" -> Async.run args[1..]
         | _ -> ()
+
     0
