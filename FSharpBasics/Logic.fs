@@ -16,9 +16,11 @@ let run args =
         printfn "bar equals baz"
 
     // matching on a tuple
-    match (foo, bar, baz) with
-    | (true, _, false) -> "foo is true, but baz is false"
-    | (true, false, _) -> "foo is true, but bar is false"
-    | (false, false, false) -> "everything is false"
-    | (_, _, _) -> "they all have some values"
-    |> printfn "%s" // quiz: what will be printed?
+    let output =
+        match (foo, bar, baz) with
+        | (true, _, false) -> "foo is true, but baz is false"
+        | (true, false, _) -> "foo is true, but bar is false"
+        | (false, false, false) -> "everything is false"
+        | (_, _, _) -> "they all have some values"
+
+    printfn "%s" output // quiz: what will be printed?
